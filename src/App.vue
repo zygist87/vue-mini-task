@@ -2,7 +2,10 @@
   <div>
     <AppNavigation/>
     <AppHeader>ŽYGIMANTAS TVERAGA</AppHeader>
-    <RouterView class="app-routing"/>
+    <!-- cia kolkas zemiau nesamone nes norejau pasidaryti animacijas -->
+    
+      <RouteTransition><RouterView class="app-routing"/></RouteTransition>
+    
     <AppFooter/>
   </div>
 </template>
@@ -11,13 +14,15 @@
 import AppNavigation from '@/components/AppNavigation'
 import AppHeader from '@/components/AppHeader'
 import AppFooter from '@/components/AppFooter'
+import RouteTransition from '@/components/RouteTransition'
 
 export default {
   name: 'App',
   components: {
     AppNavigation,
     AppHeader,
-    AppFooter
+    AppFooter,
+    RouteTransition
   }
 }
 </script>
@@ -25,12 +30,12 @@ export default {
 <style lang="scss">
 .app-routing {
   position: absolute;
-  top: 260px;
-  left: 100px;
-  z-index: 1;
-  box-sizing: border-box;
-  width: 800px;
-  height: 380px;
+  top: 220px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 1000px;
+  height: auto;
+  padding-bottom: 20px;
   border: 2px solid white;
   background-color: #ffffff;
   border-radius: 4px;

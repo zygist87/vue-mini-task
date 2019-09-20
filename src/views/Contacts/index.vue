@@ -34,7 +34,8 @@ export default {
 <style lang="scss">
 .app-card {
   padding-top: 40px;
-  padding-left: 40px;
+  //width: 100vw;
+  // max-width: 100%;
 }
 .card-title {
   font-size: 24px;

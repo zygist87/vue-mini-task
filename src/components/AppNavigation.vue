@@ -35,20 +35,18 @@ export default {
 
 <style lang="scss">
 .app-header {
-  position: stcky;
-  display: flex;
-  top: 0;
-  left: 0;
   height: 10vh;
   width: 100vw;
   background-color: #3252e5;
   color: white;
   list-style-type: none;
+  margin: -16px 0 0 -8px;
 }
 .app-link {
   font-size: 16px;
   font-weight: 400;
   text-align: right;
+  margin-right: 40px;
 }
 .app-link {
   color: white;
